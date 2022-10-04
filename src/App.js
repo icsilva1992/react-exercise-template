@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+// import Dog from "./Dog";
+import styled from 'styled-components'
 
-function App() {
+const App = () => {
+
+  // const ALL_BREEDS = 'https://dog.ceo/api/breeds/list/all'
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <h1>Exercício de React - Ubiwhere</h1>
+    </Wrapper>
   );
 }
 
 export default App;
+
+const Wrapper = styled.div `
+  padding:40px;
+  box-sizing: border-box;
+`
